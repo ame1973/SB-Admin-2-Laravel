@@ -34,4 +34,8 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/components/cards', function () {
         return View::make('admin.components.cards');
     });
+
+    Route::get('/utilities/animation', function () {
+        return View::make('admin.utilities.animation');
+    });
 });
