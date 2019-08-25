@@ -38,4 +38,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/utilities/animation', function () {
         return View::make('admin.utilities.animation');
     });
+    Route::get('/utilities/border', function () {
+        return View::make('admin.utilities.border');
+    });
 });
