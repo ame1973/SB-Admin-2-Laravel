@@ -41,4 +41,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/utilities/border', function () {
         return View::make('admin.utilities.border');
     });
+    Route::get('/utilities/color', function () {
+        return View::make('admin.utilities.color');
+    });
 });
