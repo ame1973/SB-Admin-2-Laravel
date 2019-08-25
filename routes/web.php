@@ -24,4 +24,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/charts', function () {
         return View::make('admin.charts.index');
     });
+    Route::get('/tables', function () {
+        return View::make('admin.tables.index');
+    });
 });
