@@ -1,2 +1,3 @@
-* linguist-vendored
-*.html linguist-language=php
+*.css linguist-vendored
+*.js linguist-language=Vue
+modules/* linguist-language=PHP
