@@ -27,7 +27,11 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/tables', function () {
         return View::make('admin.tables.index');
     });
+
     Route::get('/components/buttons', function () {
         return View::make('admin.components.buttons');
+    });
+    Route::get('/components/cards', function () {
+        return View::make('admin.components.cards');
     });
 });
