@@ -11,8 +11,13 @@
 |
 */
 
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Auth::routes();
 
 Route::get('/', function () {
-    return view('welcome');
+    return View::make('auth.login');
+});
+
+Route::group(['prefix'=>'admin'],function(){
+    Route::get('/', 'DashboardController@index');
 });

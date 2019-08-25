@@ -18,19 +18,19 @@
                         <form class="user" method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}
                             <div class="form-group row">
-                                <div class="col-sm-6 mb-3 mb-sm-0{{ $errors->has('name-first') ? ' has-error' : '' }}">
-                                    <input type="text" name="name-first" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name" required>
-                                    @if ($errors->has('name-first'))
+                                <div class="col-sm-6 mb-3 mb-sm-0{{ $errors->has('first_name') ? ' has-error' : '' }}">
+                                    <input type="text" name="first_name" class="form-control form-control-user" id="first_name" placeholder="First Name" required>
+                                    @if ($errors->has('first_name'))
                                         <span class="form-text text-danger">
-                                            <small>{{ $errors->first('name-first') }}</small>
+                                            <small>{{ $errors->first('first_name') }}</small>
                                         </span>
                                     @endif
                                 </div>
-                                <div class="col-sm-6{{ $errors->has('name-last') ? ' has-error' : '' }}">
-                                    <input type="text" name="name-last" class="form-control form-control-user" id="exampleLastName" placeholder="Last Name" required>
-                                    @if ($errors->has('name-last'))
+                                <div class="col-sm-6{{ $errors->has('last_name') ? ' has-error' : '' }}">
+                                    <input type="text" name="last_name" class="form-control form-control-user" id="last_name" placeholder="Last Name" required>
+                                    @if ($errors->has('last_name'))
                                         <span class="form-text text-danger">
-                                            <small>{{ $errors->first('name-last') }}</small>
+                                            <small>{{ $errors->first('last_name') }}</small>
                                         </span>
                                     @endif
                                 </div>
