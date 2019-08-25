@@ -20,4 +20,8 @@ Route::get('/', function () {
 
 Route::group(['prefix'=>'admin'],function(){
     Route::get('/', 'DashboardController@index');
+
+    Route::get('/charts', function () {
+        return View::make('admin.charts.index');
+    });
 });
